@@ -1,5 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <project path="external/busybox" name="android_external_busybox" revision="android-8.1" remote="omnirom" />
+	<remote name="phh"
+		fetch="https://github.com/phhusson/" />
+
+	<remote name="omni"
+		fetch="https://github.com/omnirom"
+		revision="android-8.1" />
+	
+	
+	
+	<!-- Phh Treble -->
+	<!-- Extracted manually from manifest.xml in https://github.com/phhusson/treble_manifest/tree/android-8.1 (we don't want the other stuff) -->
+	<project path="vendor/hardware_overlay" name="vendor_hardware_overlay" remote="phh" revision="master" />
+	<project path="device/phh/treble" name="device_phh_treble" remote="phh" revision="android-8.1" />
+	<project path="vendor/vndk" name="vendor_vndk" remote="phh" revision="master" />
+	<project path="vendor/vndk-tests" name="vendor_vndk-tests" remote="phh" revision="master" />
+	
+	<!-- busybox -->
+	<project path="external/busybox" name="android_external_busybox" revision="android-8.1" remote="omni" />
 </manifest>
 
