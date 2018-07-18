@@ -4,6 +4,9 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="https://android-review.googlesource.com/" />
+  <remote  name="omnirom"
+           fetch="https://github.com/omnirom"
+           revision="android-8.1" />
   <default revision="refs/tags/android-8.1.0_r39"
            remote="aosp"
            sync-j="4" />
@@ -619,6 +622,8 @@
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" />
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
 
+  <include name="snippets/turbo.xml" />
+  
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
 </manifest>
