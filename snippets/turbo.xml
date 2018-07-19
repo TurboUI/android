@@ -9,5 +9,8 @@
 	
 	<!-- busybox -->
 	<project path="external/busybox" name="omnirom/android_external_busybox" remote="github" revision="android-8.1" />
+	
+	<!-- TurboUI -->
+	<project path="scripts" name="android_scripts" remote="turboui" groups="pdk" />
 </manifest>
 
